@@ -8,7 +8,7 @@
     "tsc": "tsc -p ./tsconfig.json",
     "build": "yarn clean && yarn tsc",
     "dev": "yarn tsc --watch",
-    "start": "yarn build && node build/index.js",
+    "start": "yarn build && node dist/index.js",
     "serve": "node dist/index.js",
     "lint": "eslint \"./src/**/*.ts*\" --fix",
     "test": "yarn tsc --noEmit && yarn lint"
