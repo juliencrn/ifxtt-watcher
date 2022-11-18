@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 export function getFirebaseFunctionUrl() {
   const timezone = 'us-central1';
   const isProd = process.env.NODE_ENV === 'production';
+  const projectId = process.env.FIREBASE_PROJECT_ID
 
   return isProd
     ? `https://${timezone}-${projectId}.cloudfunctions.net`
